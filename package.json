@@ -27,7 +27,8 @@
   ],
   "scripts": {
     "test": "tsc --noEmit && jest --verbose",
-    "build": "rimraf dist && tsc -p tsconfig.build.json"
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "postinstall": "npm run build"
   },
   "peerDependencies": {
     "@trpc/server": "^10.0.0",
